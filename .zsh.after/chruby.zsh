@@ -1,0 +1,4 @@
+if [ -n "$RUBY_ROOT" ]; then
+  RUBY_BINPATH=$RUBY_ROOT/bin
+  PATH=$RUBY_BINPATH:${PATH/${RUBY_BINPATH}\:/}
+fi
